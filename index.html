@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AiZEN</title>
 
+  
+
   <!-- 
     - favicon
   -->
@@ -41,7 +43,17 @@
   <header class="header" data-header>
     <div class="container">
 
-      <a href="#" class="logo">AiZEN</a>
+      <a href="#" class="button">
+        <span class="button__text">
+            AIZEN
+        </span>
+        <img src="assets/images/cone.png" alt="" class="button__cone">
+        <img src="assets/images/torus.png" alt="" class="button__torus">
+        <img src="assets/images/icosahedron.png" alt="" class="button__icosahedron">
+        <img src="assets/images/sphere.png" alt="" class="button__sphere">
+    </a>
+
+
 
       <nav class="navbar" data-navbar>
 
@@ -58,41 +70,24 @@
       
 
           <li class="navbar-item">
-            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            <a href="index.html" class="navbar-link" data-nav-link>Home</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#service" class="navbar-link" data-nav-link>Services</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#feature" class="navbar-link" data-nav-link>Features</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#project" class="navbar-link" data-nav-link>Portfolio</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
-          </li>
-
-           <!-- 
-    dropdown
-  -->
-
-          <li class="navbar-item dropdown">
-            <span class="navbar-link">Company <span class="dropdown-arrow">&#9660;</span></span>
-            <div class="dropdown-content">
-              <a href="#about">About Us</a>
-              <a href="#contact">Contact</a>
-            </div>
+            <a href="services.html" class="navbar-link" data-nav-link>Services</a>
           </li>
           
-          <button class="dark-mode-btn" aria-label="toggle dark mode" onclick="toggleDarkMode()">
-            <ion-icon id="darkModeIcon" name="sunny-outline" aria-hidden="true"></ion-icon>
-          </button>
-          
+
+          <li class="navbar-item">
+            <a href="reviews.html" class="navbar-link" data-nav-link>Reviews</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="projects.html" class="navbar-link" data-nav-link>Projects</a>
+          </li>
+
+
+
 
         </ul>
 
@@ -104,7 +99,15 @@
 
     
 
-      <a href="#" class="btn btn-primary has-before has-after">Let’s Talk 👋</a>
+      <a href="#" class="button">
+        <span class="button_talk">
+            Lets Talk
+        </span>
+        <img src="assets/images/cone.png" alt="" class="button__cone">
+        <img src="assets/images/torus.png" alt="" class="button__torus">
+        <img src="assets/images/icosahedron.png" alt="" class="button__icosahedron">
+        <img src="assets/images/sphere.png" alt="" class="button__sphere">
+    </a>
 
       <div class="overlay" data-nav-toggler data-overlay></div>
 
@@ -125,71 +128,63 @@
       <section class="section hero" id="home" aria-label="hero">
         <div class="container">
           <!-- 
-
+      
           <video autoplay muted loop class="hero-video">
             <source src="G:/aizen/Aizen/assets/images/video.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
            -->
-
+      
           <div class="hero-content">
-
+            <style>
+              .hero-title {
+                font-size: 3em;
+                text-align: left;
+                margin: 0;
+                padding: 20px;
+                background: linear-gradient(45deg, #000000, #000000, #ffffff, #000000, #000000);
+                background-size: 400% 400%;
+                color: transparent;
+                background-clip: text;
+                -webkit-background-clip: text;
+                animation: gradientAnimation 15s ease infinite;
+              }
+              
+              .typing-effect {
+                font-size: 1.5em; /* Adjust font size as needed */
+                margin-top: 20px; /* Add some space between h1 and h2 */
+              }
+      
+              @keyframes gradientAnimation {
+                0% {
+                  background-position: 0% 50%;
+                }
+                50% {
+                  background-position: 100% 50%;
+                }
+                100% {
+                  background-position: 0% 50%;
+                }
+              }
+            </style>
             <h1 class="h1 hero-title">
-              Building Digital <span class="has-before">Product</span>, Brand and Experience
+              Building Digital Product, Brand and Experience
+              We Provide
             </h1>
+    
 
-            <p class="hero-text">
-              At Aizen we specialize in designing, building, shipping and scaling beautiful, usable products with
-              blazing-fast
-              efficiency
-            </p>
-
-            <div class="wrapper">
-              <a href="#" class="btn btn-primary has-before has-after">How It Works</a>
-
-              <button class="hero-btn" aria-label="pixology promo">
-                <ion-icon name="play-outline" aria-hidden="true"></ion-icon>
-
-                <span class="span">Behind the scenes</span>
-              </button>
-            </div>
-
-            <ul class="social-list">
-
-              <li>
-                <a href="#" class="social-link" style="--color: hsl(241, 77%, 63%);">
-                  <ion-icon name="logo-facebook"></ion-icon>
-
-                  <span class="span">Facebook</span>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="social-link" style="--color: hsl(0, 100%, 50%);">
-                  <ion-icon name="logo-youtube"></ion-icon>
-
-                  <span class="span">Youtube</span>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="social-link" style="--color: hsl(203, 89%, 53%);">
-                  <ion-icon name="logo-twitter"></ion-icon>
-
-                  <span class="span">Twitter</span>
-                </a>
-              </li>
-
-            </ul>
-
+ 
           </div>
-
-          <figure class="hero-banner">
-            <img src="./assets/images/hero-banner.png" width="794" height="637" alt="hero banner" class="w-100">
-          </figure>
-
         </div>
-      </section>
+        <section class="typing-section">
+          <h2 class="typing-effect" id="typed-text">
+            <span class="typing-cursor"></span>
+          </h2>
+        </section>
+        
+        
+      
+
 
 
 
@@ -199,141 +194,11 @@
         - #SERVICE
       -->
 
-      <section class="section service" id="service" aria-label="service">
-        <div class="container">
-
-          <p class="section-subtitle has-before text-center">Our Services</p>
-
-          <h2 class="h2 section-title text-center">Managing your business with our <span class="has-before">best
-              service</span></h2>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="service-card" style="--color: 174, 77%, 50%">
-
-                <div class="card-icon">
-                  <img src="./assets/images/service-icon-1.png" width="30" height="30" loading="lazy"
-                    alt="service icon">
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Product Management</a>
-                </h3>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card" style="--color: 267, 76%, 57%">
-
-                <div class="card-icon">
-                  <img src="./assets/images/service-icon-2.png" width="30" height="30" loading="lazy"
-                    alt="service icon">
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Web & Mobile Development</a>
-                </h3>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card" style="--color: 17, 100%, 68%">
-
-                <div class="card-icon">
-                  <img src="./assets/images/service-icon-3.png" width="30" height="30" loading="lazy"
-                    alt="service icon">
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Fast Customer Support</a>
-                </h3>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card" style="--color: 343, 98%, 60%">
-
-                <div class="card-icon">
-                  <img src="./assets/images/service-icon-4.png" width="30" height="30" loading="lazy"
-                    alt="service icon">
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Human Resources</a>
-                </h3>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card" style="--color: 210, 100%, 53%">
-
-                <div class="card-icon">
-                  <img src="./assets/images/service-icon-5.png" width="30" height="30" loading="lazy"
-                    alt="service icon">
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Design and Vreatives</a>
-                </h3>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card" style="--color: 157, 89%, 44%">
-
-                <div class="card-icon">
-                  <img src="./assets/images/service-icon-6.png" width="30" height="30" loading="lazy"
-                    alt="service icon">
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Marketing and Communication</a>
-                </h3>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card" style="--color: 52, 98%, 50%">
-
-                <div class="card-icon">
-                  <img src="./assets/images/service-icon-7.png" width="30" height="30" loading="lazy"
-                    alt="service icon">
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Business Development</a>
-                </h3>
-
-              </div>
-            </li>
-
-            <li>
-              <a href="#" class="link-card" style="--color: 203, 97%, 75%">
-                <span class="span">04 More Service</span>
-
-                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-              </a>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
 
 
       <!-- 
         - #FEATURE
-      -->
+      
 
       <section class="section feature" id="feature" aria-label="feature">
         <div class="container">
@@ -348,7 +213,7 @@
             <p class="section-subtitle has-before">Why Choose us</p>
 
             <h2 class="h2 section-title">
-              Specialist in aviding clients of financial <span class="has-before">challenges</span>
+              Specialist in aviding clients of financial challenges
             </h2>
 
             <ul class="feature-list">
@@ -416,154 +281,16 @@
 
 
 
-
+-->
 
       <!-- 
         - #PROJECT
       -->
 
-      <section class="section project" id="project" aria-label="project">
-        <div class="container">
-
-          <p class="section-subtitle has-before text-center">Projects</p>
-
-          <h2 class="h2 section-title text-center">
-            Aizen Solutions <span class="has-before">project</span>
-          </h2>
-
-          <ul class="filter-list">
-
-            <li>
-              <button class="filter-btn active" data-filter-btn>Website</button>
-            </li>
-
-            <li>
-              <button class="filter-btn" data-filter-btn>AI</button>
-            </li>
-
-            <li>
-              <button class="filter-btn" data-filter-btn>iOS App</button>
-            </li>
-
-            <li>
-              <button class="filter-btn" data-filter-btn>Error Fixing</button>
-            </li>
-
-            <li>
-              <button class="filter-btn" data-filter-btn>Branding Design</button>
-            </li>
-
-          </ul>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="project-card">
-
-                <figure class="card-banner img-holder" style="--width: 835; --height: 429;">
-                  <img src="./assets/images/project-1.jpg" width="835" height="429" loading="lazy" alt="Book art design"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Ai Chat-Bot</a>
-                  </h3>
-
-                  <a href="#" class="card-tag">Development</a>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="project-card">
-
-                <figure class="card-banner img-holder" style="--width: 416; --height: 429;">
-                  <img src="./assets/images/project-2.jpg" width="416" height="429" loading="lazy" alt="Graphic Design"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Graphics </a>
-                  </h3>
-
-                  <a href="#" class="card-tag">Designing</a>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="project-card">
-
-                <figure class="card-banner img-holder" style="--width: 416; --height: 429;">
-                  <img src="./assets/images/project-3.jpg" width="416" height="429" loading="lazy" alt="3d Digital Art"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Programming and Tech</a>
-                  </h3>
-
-                  <a href="#" class="card-tag">Design</a>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="project-card">
-
-                <figure class="card-banner img-holder" style="--width: 416; --height: 429;">
-                  <img src="./assets/images/project-4.png" width="416" height="429" loading="lazy" alt="Web Design"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Web-Sites</a>
-                  </h3>
-
-                  <a href="#" class="card-tag">Development</a>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="project-card">
-
-                <figure class="card-banner img-holder" style="--width: 416; --height: 429;">
-                  <img src="./assets/images/project-5.jpg" width="416" height="429" loading="lazy"
-                    alt="Mobile App Design" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Mobile App</a>
-                  </h3>
-
-                  <a href="#" class="card-tag">Development</a>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
 
       <!-- 
         - #NEWSLETTER
-      -->
+      
 
       <section class="section newsletter has-bg-image" aria-label="newsletter"
         style="background-image: url('./assets/images/newsletter-bg.jpg')">
@@ -594,21 +321,21 @@
 
         </div>
       </section>
-
+    -->
 
 
 
 
       <!-- 
         - #BLOG
-      -->
+     
 
       <section class="section blog" id="blog" aria-label="blog"></section>
 
     </article>
   </main>
 
-
+ -->
 
 
 
@@ -618,235 +345,23 @@
 
   <footer class="footer">
     <div class="container">
-
       <div class="footer-top section">
-
         <div class="footer-brand">
-
           <p class="footer-list-title">About Aizen</p>
-
           <p class="footer-text">
-            A new way to make the payments easy, reliable and 100% secure.
+            A new way to make payments easy, reliable, and 100% secure.
           </p>
-
           <ul class="social-list">
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-youtube"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-skype"></ion-icon>
-              </a>
-            </li>
-
+            <li><a href="#" class="social-link"><ion-icon name="logo-youtube"></ion-icon></a></li>
+            <li><a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#" class="social-link"><ion-icon name="logo-skype"></ion-icon></a></li>
           </ul>
-
         </div>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Usefull Links</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Contact us</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">How it Works</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Talk with us</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Explore</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Terms & Services</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Community</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Help Center</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Partners</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Suggestions</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Blog</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Newsletters</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Instagram post</p>
-          </li>
-
-          <li>
-            <ul class="insta-post">
-
-              <li>
-                <div class="insta-card">
-
-                  <figure class="post-banner">
-                    <img src="./assets/images/insta-post-1.jpg" width="77" height="63" loading="lazy"
-                      alt="instagram post" class="img-cover">
-                  </figure>
-
-                  <a href="#" class="card-content">
-                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-              </li>
-
-              <li>
-                <div class="insta-card">
-
-                  <figure class="post-banner">
-                    <img src="./assets/images/insta-post-2.jpg" width="77" height="63" loading="lazy"
-                      alt="instagram post" class="img-cover">
-                  </figure>
-
-                  <a href="#" class="card-content">
-                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-              </li>
-
-              <li>
-                <div class="insta-card">
-
-                  <figure class="post-banner">
-                    <img src="./assets/images/insta-post-3.jpg" width="77" height="63" loading="lazy"
-                      alt="instagram post" class="img-cover">
-                  </figure>
-
-                  <a href="#" class="card-content">
-                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-              </li>
-
-              <li>
-                <div class="insta-card">
-
-                  <figure class="post-banner">
-                    <img src="./assets/images/insta-post-4.jpg" width="77" height="63" loading="lazy"
-                      alt="instagram post" class="img-cover">
-                  </figure>
-
-                  <a href="#" class="card-content">
-                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-              </li>
-
-              <li>
-                <div class="insta-card">
-
-                  <figure class="post-banner">
-                    <img src="./assets/images/insta-post-5.jpg" width="77" height="63" loading="lazy"
-                      alt="instagram post" class="img-cover">
-                  </figure>
-
-                  <a href="#" class="card-content">
-                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-              </li>
-
-              <li>
-                <div class="insta-card">
-
-                  <figure class="post-banner">
-                    <img src="./assets/images/insta-post-6.jpg" width="77" height="63" loading="lazy"
-                      alt="instagram post" class="img-cover">
-                  </figure>
-
-                  <a href="#" class="card-content">
-                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-              </li>
-
-            </ul>
-          </li>
-
-        </ul>
-
       </div>
-
-      <div class="footer-bottom">
-
-        <p class="copyright">
-          &copy; aizensolutions@gmail.com
-        </p>
-
-        <ul class="footer-bottom-list">
-
-          <li>
-            <a href="#" class="footer-bottom-link">@Linked-in</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-bottom-link"></a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-bottom-link"></a>
-          </li>
-
-        </ul>
-
-      </div>
-
     </div>
   </footer>
+  
 
 
 
